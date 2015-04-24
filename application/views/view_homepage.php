@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
+<title>BalikTahanan</title>
 	<meta charset="utf-8">
 	<title>Welcome to CodeIgniter</title>
 
@@ -10,9 +10,18 @@
    
    	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
 
+    <!-- Custom styles for this template -->
+    <link href="sticky-footer.css" rel="stylesheet">
+
+
    	<script type="text/javascript" src="<?php echo base_url(); ?>assets/js/bootstrap.min.js"></script>
 
   	<style>
+
+  		.top{
+  			font-size: 66px;
+  		}
+
 		.carousel {
 		  margin-bottom: 60px;
 		}
@@ -37,6 +46,10 @@
 
 		.helpbutton {
 			padding-top: 100px;
+		}
+
+		.white{
+			color:white;
 		}
 
 	</style>
@@ -73,12 +86,12 @@
 			</ol>
 			<div class="carousel-inner">
 			    <div class="item active">
-			    	<img src="<?php echo base_url(); ?>assets/images/1.jpg" alt="First slide">
+			    	<img src="<?php echo base_url(); ?>assets/images/1img.jpg" alt="First slide">
                     <div class="header-text hidden-xs">
                         <div class="col-md-12 text-center">       
                         	<div class="helpbutton">
-	                        	<h1 class="text-success"><strong>Send the Homeless to an Expedition to MARS!!!</strong></h1>
-								<h3>This way they'll be out of your life HAPPY!</h3>  
+	                        	<h1 class = "top"><strong>Each flight, a chance to be reunited.</strong></h1>
+								<h3>BalikTahanan has sent more than 500 people back to their homes.</h3>  
 								<br> 
                        			<a align="center" href="#" class="btn btn-primary btn-lg">Help Someone Now!</a>
                       	 	</div>
@@ -86,12 +99,12 @@
                     </div>
 			    </div>
 			    <div class="item">
-			    	<img src="<?php echo base_url(); ?>assets/images/2.jpg" alt="Second slide">
+			    	<img src="<?php echo base_url(); ?>assets/images/2img.jpg" alt="Second slide">
                     <div class="header-text hidden-xs">
                         <div class="col-md-12 text-center">
 							<div class="helpbutton">
-								<h1 class="text-success"><strong>GO HOME AND GET FREE FOOD FROM YOUR MAMA!!</strong></h1>
-								<h3>This way you'll bring them down with you</h3>
+								<h1 class = "top white"><strong>We believe in second chances.</strong></h1>
+								<h3 class = "white">BalikTahanan gives rural-urban migrants a ticket back home.</h3>
 								<br> 
                        			<a align="center" href="#" class="btn btn-primary btn-lg">Read More</a>
                       	 	</div>                              
@@ -99,12 +112,12 @@
                     </div>
 			    </div>
 			    <div class="item">
-			    	<img src="<?php echo base_url(); ?>assets/images/3.jpg" alt="Third slide">
+			    	<img src="<?php echo base_url(); ?>assets/images/3img.jpg" alt="Third slide">
                     <div class="header-text hidden-xs">
                         <div class="col-md-12 text-center">
 							<div class="helpbutton">
-								<h1><strong>Send the Homeless to an Expedition to MARS!!!</strong></h1>
-								<h3>This way they'll be out of your life HAPPY!</h3>  
+								<h1 class = "top"><strong>Homeless no more.</strong></h1>
+								<h3>BalikTahanan offers more than just relocation.</h3>  
 								<br> 
                        			<a align="center" href="#" class="btn btn-primary btn-lg">Learn More</a>
                       	 	</div>
@@ -120,7 +133,6 @@
 			</a>
 		</div>
 	</div>
-
 	<h1 align="center">Testimonials</h1><br>
 	<div class="row">
 		<div class="col-md-1"></div>
@@ -130,7 +142,7 @@
 					<img src="<?php echo base_url(); ?>assets/images/jm.jpg" height="120", width="90"/>
 				</div>
 				<div class="col-md-9">
-				  <p>I was able to go back to my hometown and torture my mama more! Thank you very much!!</p>
+				  <p>Getting back home was like winning the lottery.</p>
 				  <small>JM Manalo from <cite title="Planet Jupiter">Tacloban, Leyte</cite></small>
 				</div>
 			</blockquote>
@@ -139,7 +151,7 @@
 		<div class="col-md-5">
 			<blockquote class="pull-right">
 				<div class="col-md-9">
-					<p>I was able to go back to my hometown and torture my mama more! Thank you very much!!</p>
+					<p>The big city wasn't what I made it out to be. Thank you, BalikTahanan for my ticket back home.</p>
 				 	<small>Frances Calceta from <cite title="Planet Jupiter">Davao Oriental</cite></small>
 				</div>
 				<div class="col-md-3">
@@ -159,7 +171,7 @@
 					<img src="<?php echo base_url(); ?>assets/images/gerald.jpg" height="120", width="90"/>
 				</div>
 				<div class="col-md-9">
-				  <p>I was able to go back to my hometown and torture my mama more! Thank you very much!!</p>
+				  <p>I went to the big city to get a job but I ended up homeless. Homeless and jobless, I wouldn't have been able to save up for a ticket home if it weren't for BalikTahanan.</p>
 				  <small>Gerald Anthony from <cite title="Planet Jupiter">Bacolod, Negros Occidental</cite></small>
 				</div>
 			</blockquote>
@@ -168,7 +180,7 @@
 		<div class="col-md-5">
 			<blockquote class="pull-right">
 				<div class="col-md-9">
-					<p>I was able to go back to my hometown and torture my mama more! Thank you very much!!</p>
+					<p>I was able to go back home and reunite with my twin.</p>
 				 	<small>Gerald Roy from <cite title="Planet Jupiter">Ilocos Norte</cite></small>
 				</div>
 				<div class="col-md-3">
@@ -179,5 +191,26 @@
 		</div>
 		<div class="col-md-1"></div>
 	</div>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="col-md-1"></div>
+			<div class="col-md-10"><br><br>
+  				<div class="row">
+					<div style="float: left;
+								padding: 20px 0 0 0;
+								width: 100%;
+								border-top: 1px solid #C0C0C0;">
+					</div>
+				</div>
+				<div class = "row">
+					<p align="right">© 2015 BalikTahanan. All Rights Reserved</p>
+				</div>
+			</div>
+			<div class="col-md-1"></div>
+  		</div>
+	</footer>
+
+
 </body>
 </html>
