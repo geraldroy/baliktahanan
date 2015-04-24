@@ -5,4 +5,9 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->view('view_homepage');
 	}
+	
+	public function stories()
+	{
+		$this->load->view('view_stories');
+	}
 }
