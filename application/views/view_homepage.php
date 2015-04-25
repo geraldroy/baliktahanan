@@ -3,7 +3,7 @@
 <head>
 <title>BalikTahanan</title>
 	<meta charset="utf-8">
-	<title>Welcome to CodeIgniter</title>
+	<title>BalikTahanan</title>
 
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/flatly/bootstrap.css" media="screen">
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/bootswatch.min.css">
@@ -65,13 +65,16 @@
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 		      </button>
-		      <a class="navbar-brand" href="#">BalikTahanan</a>
+		      <a class="navbar-brand" href="<?php echo base_url(); ?>">BalikTahanan</a>
 		    </div>
 
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
 		      	<ul class="nav navbar-nav">
-			        <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
-			        <li><a href="#">About</a></li>
+			        <li class="active"><a href="<?php echo base_url(); ?>">Home <span class="sr-only">(current)</span></a></li>
+			        <li><a href="<?php echo base_url();?>index.php/welcome/about">About Us</a></li>
+					<li><a href="<?php echo base_url();?>index.php/welcome/impact">Impact</a></li>
+					<li><a href="#">Partnerships</a></li>
+					<li><a href="<?php echo base_url();?>index.php/welcome/stories">Get Involved</a></li>
 			    </ul>
 		    </div>
 		  </div>

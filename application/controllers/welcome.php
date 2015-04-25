@@ -10,4 +10,19 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->view('view_stories');
 	}
+	
+	public function donate()
+	{
+		$this->load->view('view_donate');
+	}
+	
+	public function about()
+	{
+		$this->load->view('view_about');
+	}
+	
+	public function impact()
+	{
+		$this->load->view('view_impact');
+	}
 }

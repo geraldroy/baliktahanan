@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Welcome to CodeIgniter</title>
+	<title>BalikTahanan</title>
 
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/flatly/bootstrap.css" media="screen">
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/bootswatch.min.css">
@@ -10,7 +10,7 @@
 </head>
 <body>
 	<nav class="navbar navbar-default navbar-fixed-top">
-		  <div class="container-fluid">
+		  <div class="container">
 		    <div class="navbar-header">
 		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
 		        <span class="sr-only">Toggle navigation</span>
@@ -18,23 +18,31 @@
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 		      </button>
-		      <a class="navbar-brand" href="#">BalikTahanan</a>
+		      <a class="navbar-brand" href="<?php echo base_url(); ?>">BalikTahanan</a>
 		    </div>
 
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
 		      	<ul class="nav navbar-nav">
-			        <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
-			        <li><a href="#">About</a></li>
+			        <li><a href="<?php echo base_url(); ?>">Home <span class="sr-only">(current)</span></a></li>
+			        <li><a href="<?php echo base_url();?>index.php/welcome/about">About Us</a></li>
+					<li><a href="<?php echo base_url();?>index.php/welcome/impact">Impact</a></li>
+					<li><a href="#">Partnerships</a></li>
+					<li class="active"><a href="<?php echo base_url();?>index.php/welcome/stories">Get Involved</a></li>
 			    </ul>
 		    </div>
 		  </div>
-	</nav>
+</nav>
 	<br><br>
 	<div class="container">
-		<h1 align = "center">Gerald Antonio Margarino Anthony</h1>
-		<h3 align="center"><strong>Current Donation Raised:</strong> P800 / P2500</h3>
+		<?php 
+		$id = $this->uri->segment(3);
+		$query = $this->db->query('SELECT * FROM person WHERE id = '.$id);
+		$person = $query->first_row();
+		?>
+		<h1 align = "center"><?php echo $person->name;?></h1>
+		<h3 align="center"><strong>Current Donation Raised:</strong> <?php echo $person->current.' / '.$person->to_raise ?></h3>
 		<div class="progress progress-striped active" align="center">
-		  <div class="progress-bar progress-bar-success" style="width: 32%"></div>
+		  <div class="progress-bar progress-bar-success" style="width: <?php echo ($person->current/$person->to_raise)*100 ?>%"></div>
 		</div>
 		<br>
 		<div class="col-md-7">
@@ -43,20 +51,19 @@
 					<div class="panel-header">
 					</div>
 					<div class="panel-body">
-						<div class="col-md-6">
-							<img src = "http://static.rappler.com/images/hungryOFW-EugeneAsio-20140116.jpg" height = "220" width = "280" />
-						</div>
-						<div class="col-md-6">
-							<p><strong>Age:</strong> 52</p>
-							<p><strong>Birthdate:</strong> May 1, 1962</p>
-							<p><strong>Hometown:</strong> Davao City </p>
-							<p><strong>No. of Children:</strong> 2</p>
-							<p><strong>Marital Status:</strong> Married</p>
-							<p><strong>Relatives:</strong> </p>
-							<p><strong>Last Hometown Visit:</strong> June 6, 2013</p><br>
-						</div>
-						<p><strong>Story</strong><br>The story of my life: I'll take her home, I'd drive all night to keep her warm and time is frozen. The story of my life: I'll give her hope and spend her love until she's broke inside... the story of my life.</p>
-						<p><strong>Reason for Going Home</strong><br>"Nami-miss ko na yung pamilya ko. Nagtitiis na lang ako dito sa Maynila pero di ko na talaga kaya."</p>
+							<div class="col-md-6">
+								<img src = "http://static.rappler.com/images/hungryOFW-EugeneAsio-20140116.jpg" height = "220" width = "280" />
+							</div>
+							<div class="col-md-6">
+								<p><strong>Age:</strong> <?php echo $person->age; ?></p>
+								<p><strong>Hometown:</strong> <?php echo $person->hometown; ?></p>
+								<p><strong>Occupation:</strong> <?php echo $person->occupation; ?></p>
+								<p><strong>Marital Status:</strong> <?php echo $person->status; ?></p>
+								<p><strong>No. of Children:</strong> <?php echo $person->children; ?></p>
+								<p><strong>Last Hometown Visit:</strong><br> <?php echo $person->last_visit; ?></p><br><br>
+							</div>
+						<p><strong>My Story</strong><br><?php echo $person->story; ?></p>
+						<p><strong>Reason for Going Home</strong><br><?php echo $person->reason; ?></p>
 					</div>
 				</div>
 				<div class="form-group">
@@ -76,7 +83,6 @@
 				<h2 class="panel-title">Donation Details</h2>
 			  </div>
 			  <div class="panel-body">
-				<h4>Enter your details below:</h4>
 				<div class="form-group">
 				  <label class="control-label" for="focusedInput">Name</label>
 				  <input class="form-control" id="focusedInput" type="text" placeholder="Optional"><br>
@@ -97,5 +103,24 @@
 			</div>
 		</div>
 	</div>
+	
+	<footer class="footer">
+		<div class="container">
+			<div class="col-md-1"></div>
+			<div class="col-md-10"><br><br>
+  				<div class="row">
+					<div style="float: left;
+								padding: 20px 0 0 0;
+								width: 100%;
+								border-top: 1px solid #C0C0C0;">
+					</div>
+				</div>
+				<div class = "row">
+					<p align="right">© 2015 BalikTahanan. All Rights Reserved</p>
+				</div>
+			</div>
+			<div class="col-md-1"></div>
+  		</div>
+	</footer>
 </body>
 </html>
