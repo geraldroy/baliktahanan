@@ -7,6 +7,8 @@
 
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/flatly/bootstrap.css" media="screen">
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/bootswatch.min.css">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/thing.css">
+    
    
    	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
 
@@ -65,6 +67,7 @@
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 		      </button>
+		      <img src="<? echo base_url(); ?>assets/images/log.png" height = "60" class = "asd"/>
 		      <a class="navbar-brand" href="<?php echo base_url(); ?>">BalikTahanan</a>
 		    </div>
 
