@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/flatly/bootstrap.css" media="screen">
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/bootswatch.min.css">
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/thing.css">
-    
+
 
 </head>
 <body>
@@ -43,7 +43,7 @@
 		$person = $query->first_row();
 		?>
 		<h1 align = "center"><?php echo $person->name;?></h1>
-		<h3 align="center"><strong>Current Donation Raised:</strong> <?php echo $person->current.' / '.$person->to_raise ?></h3>
+		<h3 align="center"><strong>Current Donation Raised:</strong> <?php echo $person->current.' / '.$person->to_raise ?> Php</h3>
 		<div class="progress progress-striped active" align="center">
 		  <div class="progress-bar progress-bar-success" style="width: <?php echo ($person->current/$person->to_raise)*100 ?>%"></div>
 		</div>

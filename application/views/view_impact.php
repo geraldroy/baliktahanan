@@ -40,7 +40,7 @@
 		<div class="page-header">
 			<h1 id="forms" align = "center">Our Impact</h1>
 		</div>
-		<h2 align = "center">HOW THIS WORKS?</h2>
+		<h2 align = "center">How can I help?</h2>
 		<br>
 		<ol>
 			<li class = "step"> Photos of homeless people around Metro Manila who are in dire need to go home to their provinces, are gathered and posted on the site,  along with their stories.</p>
@@ -49,7 +49,7 @@
 			<li class = "step"> The beneficiary will recieve your donation and get a ticket home.</p>
 		</ol>
 		<br>
-		<h2 align="center">SUCCESSFUL TRAVELS</h2><br>
+		<h2 align="center">Success Stories</h2><br>
 		<div class="col-md-3">
 			<div class="panel panel-success">
 			  <div class="panel-heading">
@@ -57,7 +57,8 @@
 			  </div>
 			  <div class="panel-body">
 				<img src="<? echo base_url(); ?>assets/images/boy1.jpg" class = "img-responsive"/><br>
-				<p>He left the province in order to become a temp construction worker, like his father, and contribute to family funds. After his father died in a freak accident, he wants to go back home.</p>
+				<p>He left the province in order to become a temp construction worker, like his father, and contribute to family funds. After his father died in a freak accident, he wants to go back home. 
+					<br><a href="#">Read More</a></p>
 			  </div>
 			</div>
 		</div>
@@ -68,7 +69,8 @@
 			  </div>
 			  <div class="panel-body">
 				<img src="<? echo base_url(); ?>assets/images/old2.jpg" class = "img-responsive"/><br>
-				<p>She lives in a rented room in the slums, making a living by washing her neighbor's laundry. After her husband left her, she decided that it is best to go back to Iloilo to meet her parents before they die.</p>
+				<p>She lives in a rented room in the slums, making a living by washing her neighbor's laundry. After her husband left her, she decided that it is best to go back to Iloilo to meet her parents before they die. 
+					<br><a href="#">Read More</a></p></p>
 			  </div>
 			</div>
 		</div>
@@ -79,7 +81,7 @@
 			  </div>
 			  <div class="panel-body">
 				<img src="<? echo base_url(); ?>assets/images/old1.jpg" class = "img-responsive"/><br>
-				<p>He has been in Manila for twelve years, selling cigarettes and candies beside an underpass. He wishes to go back home but is unable to save enough money for bus fare.</p>
+				<p>He has been in Manila for twelve years, selling cigarettes and candies beside an underpass. He wishes to go back home but is unable to save enough money for bus fare. <br><a href="#">Read More</a></p>
 			  </div>
 			</div>
 		</div>
@@ -90,7 +92,7 @@
 			  </div>
 			  <div class="panel-body">
 			  	<img src="<? echo base_url(); ?>assets/images/girl1.jpg" class="img-responsive" alt="Responsive image"><br>
-				<p>She came to the city to work as a maid, but after being mistreated, she decided to go back home. She has one child, and she plans to raise him on her own in her province.</p>
+				<p>She came to the city to work as a maid, but after being mistreated, she decided to go back home. She has one child, and she plans to raise him on her own in her province. <br><a href="#">Read More</a></p>
 			  </div>
 			</div>
 		</div>

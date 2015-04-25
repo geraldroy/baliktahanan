@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/flatly/bootstrap.css" media="screen">
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/bootswatch.min.css">
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/thing.css">
-    
+
 
 </head>
 <body>
@@ -51,7 +51,7 @@
 					<div class="panel-body">
 						<div class="col-md-5">
 							<br>
-							<img src = "http://static.rappler.com/images/hungryOFW-EugeneAsio-20140116.jpg" height = "200" width = "280" />
+							<img src = <?php echo base_url().'assets/images/'.$person->id.'.jpg'; ?> height = "280" width = "280" />
 						</div>
 						<div class="col-md-7">
 							<h2><strong><?php echo $person->name;?></strong></h2>
@@ -65,23 +65,6 @@
 				</div>
 			</div>
 			<?php } ?>
-			<div class="row">
-				<div class="panel panel-default">
-					<div class="panel-body">
-						<div class="col-md-5">
-							<img src = "http://static.rappler.com/images/hungryOFW-EugeneAsio-20140116.jpg" height = "200" width = "280" />
-						</div>
-						<div class="col-md-7">
-							<h2><strong>Gerald Anthony</strong></h2>
-							<p><strong>Age:</strong> 52<br> <strong>Hometown:</strong> Davao City <br> <strong>Location:</strong> Manila City</p>
-							<p><strong>Story</strong><br>You said it again; my heart's in motion. I'm at the edge of my emotion watching the shadows burning in the dark.</p>
-						</div>
-					</div>
-					<div class="panel-footer">
-						<a href = "#"><div align="right">Fund</div></a>
-					</div>
-				</div>
-			</div>
 			<div align="center">
 				<ul class="pagination">
 				  <li class="disabled"><a href="#">«</a></li>
