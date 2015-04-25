@@ -40,7 +40,7 @@
 		$person = $query->first_row();
 		?>
 		<h1 align = "center"><?php echo $person->name;?></h1>
-		<h3 align="center"><strong>Current Donation Raised:</strong> <?php echo $person->current.' / '.$person->to_raise ?></h3>
+		<h3 align="center"><strong>Current Donation Raised:</strong> <?php echo $person->current.' / '.$person->to_raise ?> Php</h3>
 		<div class="progress progress-striped active" align="center">
 		  <div class="progress-bar progress-bar-success" style="width: <?php echo ($person->current/$person->to_raise)*100 ?>%"></div>
 		</div>
@@ -76,6 +76,9 @@
 			<div align="center">
 				<a href="#" class="btn btn-success btn-md btn-block">Send Message</a><br>
 			</div>
+			<div align="right">
+				<strong>Share on</strong><a href="#"> <img src="http://weeklyups.com/wp-content/uploads/2015/02/Facebook-Logo-2.jpg" height="20" width="20"/></a> <a href="#"><img src="http://vignette2.wikia.nocookie.net/community-sitcom/images/3/3d/Twitterlogo.png/revision/latest?cb=20121018102426" height="20" width="20"/></a> <a href="#"><img src="https://developers.google.com/+/images/branding/g+128.png" height="20" width="20"/></a>
+			</div>
 		</div>
 		<div class="col-md-5">
 			<div class="panel panel-success">
@@ -97,7 +100,7 @@
 				  <input class="form-control" id="focusedInput" type="text" placeholder="XXX"><br>
 				  <input class="form-control" id="focusedInput" type="text" placeholder="Amount in PhP"><br>
 				</div>
-					<a href="#" class="btn btn-success btn-md btn-block">Confirm Donation</a>
+					<a href="<?php echo base_url();?>index.php/welcome/stories_confirm" class="btn btn-success btn-md btn-block">Confirm Donation</a>
 				</div>
 			  </div>
 			</div>

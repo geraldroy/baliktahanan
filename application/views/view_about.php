@@ -44,27 +44,27 @@ We are a group of four university students who, for various reasons, decided to 
 		<h2 align="center">Meet the Team</h2><br>
 		<div class="col-md-3">
 			<img src="http://static.rappler.com/images/hungryOFW-EugeneAsio-20140116.jpg" height = "160" width = "220"/><br>
+			<h3><strong>Roy Campanano</strong></h3>
+			<p class="lid">BACK-ENDER</p>
+			<p>He is the lead programmer and designer for the Balik Tahanan web application. He also manages and guides his team as they create the web design so as to ensure quality and appeal of web surfers. The project spawned from his idea of re-uniting homeless people to their families in their province.</p>
+		</div>
+		<div class="col-md-3">
+			<img src="http://static.rappler.com/images/hungryOFW-EugeneAsio-20140116.jpg" height = "160" width = "220"/><br>
 			<h3><strong>JM Manalo</strong></h3>
-			<p class="lid">POSITION</p>
-			<p>He is JM Manalo. Wala na akong masabi.</p>
+			<p class="lid">FRONT-ENDER/RESEARCHER</p>
+			<p>He is one of the front-end designers of the Balik Tahanan web application. Researched on the subject matter of homeless people in Manila at first, he soon contributed in designing the app webpage. He became an expert front-end designer overnight, with credit to Campanano.</p>
 		</div>
 		<div class="col-md-3">
 			<img src="http://static.rappler.com/images/hungryOFW-EugeneAsio-20140116.jpg" height = "160" width = "220"/><br>
-			<h3><strong>Gerald Roy</strong></h3>
-			<p class="lid">POSITION</p>
-			<p>He is Gerald Roy. Wala na akong masabi.</p>
-		</div>
-		<div class="col-md-3">
-			<img src="http://static.rappler.com/images/hungryOFW-EugeneAsio-20140116.jpg" height = "160" width = "220"/><br>
-			<h3><strong>Gerald Anthony</strong></h3>
-			<p class="lid">POSITION</p>
-			<p>He is Gerald Anthony. Wala na akong masabi.</p>
+			<h3><strong>Anthony Genoguin</strong></h3>
+			<p class="lid">FRONT-ENDER</p>
+			<p>He is one of the front-end designers of the Balik Tahanan web application. He mainly developed the home page and prepared raw data for use at the website.</p>
 		</div>
 		<div class="col-md-3">
 			<img src="http://static.rappler.com/images/hungryOFW-EugeneAsio-20140116.jpg" height = "160" width = "220"/><br>
 			<h3><strong>Frances Calceta</strong></h3>
-			<p class="lid">POSITION</p>
-			<p>She is Frances Calceta. Wala na akong masabi.</p>
+			<p class="lid">FRONT-ENDER/RESEARCHER</p>
+			<p>She is one of the front-end designers and researcher for the Balik Tahanan web application. She mostly gets the images used in the site, and does revisions of the design for optimization.</p>
 		</div>
 	</div>
 	
