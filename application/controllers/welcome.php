@@ -26,5 +26,8 @@ class Welcome extends CI_Controller {
 		$this->load->view('view_impact');
 	}
 
-
+	public function stories_confirm()
+	{
+		$this->load->view('view_stories_confirm');
+	}
 }
